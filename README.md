@@ -1,6 +1,7 @@
 # refrigeration-cycle-simulation
 Steady-state DWSIM simulation of a propane vapor-compression refrigeration cycle, validated by hand and plotted on a P-h diagram.
-How the cycle works
+
+# How the cycle works
 
 A refrigerator moves heat from a cold space to a warm one, which heat will not
 do on its own. The cycle forces it by exploiting the fact that a fluid's boiling
@@ -38,13 +39,13 @@ The coefficient of performance is the ratio of what you get to what you pay for:
 the P-h diagram these are the horizontal lengths of the 4-1 and 1-2 segments, so
 the COP can be read directly off the chart.
 
-Vapor-Compression Refrigeration Cycle (DWSIM)
+# Vapor-Compression Refrigeration Cycle (DWSIM)
 
 
 Steady-state simulation of a propane refrigeration cycle in DWSIM 10.2.5,
 Validated through calculations in Excel and plotted on a pressure-enthalpy diagram.
 
-System
+# System
 
 | Parameter | Value |
 |---|---|
@@ -55,7 +56,7 @@ System
 | Compressor adiabatic efficiency | 80 % |
 | Basis | 1 mol/s (0.0441 kg/s) |
 
-Results
+# Results
 
 | Quantity | Value |
 |---|---|
@@ -66,11 +67,11 @@ Results
 | Carnot COP (253 K / 305 K) | 4.87 |
 | Second-law efficiency | 57 % |
 
-Validation
+# Validation
 Energy balance closes to 0.0023 %, therefore the 5_evap_out cycles back to 1_evap_out, creating a refrigeration loop within 0.005 K. All three duties were recomputed by Excel from
 mass flow x enthalpy change and match DWSIM to five significant figures.
 
-Notes on the model
+# Notes on the model
 
 Evaporator specification. 
 The tutorial specifies the evaporator by outlet temperature (253 K). Propane at 2.45 bar is already at 253 K, so this places the PT flash exactly on the saturation dome, where vapor fraction is undetermined; the block returns zero duty. Respecified by outlet vapor fraction = 1.0, which is well posed and physically correct for an evaporator.
