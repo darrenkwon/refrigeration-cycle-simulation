@@ -3,6 +3,7 @@ Steady-state DWSIM simulation of a propane vapor-compression refrigeration cycle
 
 # How the cycle works
 ![Refrigeration cycle concept diagram](https://raw.githubusercontent.com/darrenkwon/refrigeration-cycle-simulation/02d80c1f33223ac922f264cc3848f804820d7cbc/figures/refrigeration%20concept%20diagram.png)
+
 A refrigerator moves heat from a cold space to a warm one, which heat will not
 do on its own. The cycle forces it by exploiting the fact that a fluid's boiling
 point depends on pressure: propane boils at 253 K (-20 C) at 2.45 bar, but
